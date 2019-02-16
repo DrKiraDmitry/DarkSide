@@ -9,7 +9,7 @@ header{
   padding: 10px;
 }
 .blok {
-  background-image: url(/dist/img/1.jpg);
+  background-image: url(img/1.jpg);
   color: #FFF;
   cursor: pointer;
   width: 864px;
@@ -19,17 +19,17 @@ header{
   transition:3s;
 }
 #checkbox:checked~.blok {
-  background-image: url(/dist//img/2.jpg)
+  background-image: url(img/2.jpg)
 }
 .blokz {
-  background-image: url(/dist/img/41.jpg);
+  background-image: url(img/41.jpg);
   color: #FFF;
   cursor: pointer;
   width: 748px;
   height: 1024px;
 }
 #checkbox:checked~.blokz {
-  background-image: url(/dist/img/42.jpg);
+  background-image: url(img/42.jpg);
   color: #000;
 }
 /**/
