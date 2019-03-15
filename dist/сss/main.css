@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+
 body{
   display: flex;
   flex-direction: column;
   margin: 0px;
   justify-content: center;
-  background: #443e3e;
+  background: url(img/4978587317_71dff37ae1_b.jpg);
+  font-family: 'Roboto', sans-serif;
+  width:100%; 
+  height:100%;
 }
 header{
-  background: #222222;
+  background: linear-gradient(45deg, rgba(90, 72, 44, .4), rgba(80, 63, 118, .6));
   color: aqua;
   text-align: center;
 }
@@ -27,15 +32,34 @@ img{
   height: 100%;
 }
 footer{
-  background: #222222;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgba(90, 72, 44, .4), rgba(80, 63, 118, .6));
   color: aqua;
   font-size: 30px;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
+}
+.ImgBlock{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
 }
 .box{
   padding: 40px 0px;
-  margin: 0 auto;
+  text-align: center;
+}
+.text{
+  position: relative;
+  margin-top: -61px; 
+  z-index: 3;
+  background: linear-gradient(45deg, rgba(47, 42, 78, .8), rgba(80, 63, 118, .1));
+}
+.text p{
+  font-size: 12px;
+  color: white;
+  padding: 5px 10px;
 }
 /**/
 .checkbox {
@@ -81,4 +105,19 @@ footer{
 }
 .checkbox:focus + label:before {
   box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+.logo{
+  max-width: 100px;
+  margin: 0 auto;
+}
+@media(min-width: 768px)
+{
+  .TwoImg{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .ImgBlock{
+    margin: 0 20px;
+  }
 }
